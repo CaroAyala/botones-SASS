@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap");
+
+$button-font: "Josefin Slab", serif;
+$green: #00ae68;
+$darker-green: #007144;
+$blue: #5dc8cd;
+$darker-blue: #1e8185;
+$yellow: #ffaa40;
+$darker-yellow: #ff9900;
+$violet: #a74982;
+$darker-violet: #6d184b;
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin font {
+  font-family: $button-font;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+@mixin font-tittle {
+  font-family: $button-font;
+  color: $green;
+  font-size: 40px;
+  font-weight: 900;
+}
+@mixin font-tittles-sections {
+  font-family: $button-font;
+  font-weight: bolder;
+  font-size: 25px;
+  color: black;
+}
+@mixin buttons {
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  font-family: $button-font;
+  transition: all 0.3s;
+}
+// contenido
+body {
+  margin: 0;
+  background-color: rgb(238, 234, 234);
+}
+.contenedor {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 1200px;
+  .titulo {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    width: 600px;
+    height: 50px;
+    @include font-tittle;
+  }
+}
+.titulo-seccion {
+  height: auto;
+  padding-top: 40px;
+}
+// FADE //
+.fade {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: auto;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  @include font-tittles-sections;
+}
+.botones-fade {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  font-family: $button-font;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  .fade-verde {
+    background-color: $green;
+    @include flex;
+    @include buttons;
+    @include font;
+  }
+  .fade-verde:hover {
+    background-color: $darker-green;
+  }
+  .fade-celeste {
+    background-color: $blue;
+    @include flex;
+    @include buttons;
+    @include font;
+  }
+  .fade-celeste:hover {
+    background-color: $darker-blue;
+  }
+  .fade-amarillo {
+    background-color: $yellow;
+    @include flex;
+    @include buttons;
+    @include font;
+  }
+  .fade-amarillo:hover {
+    background-color: $darker-yellow;
+  }
+  .fade-violeta {
+    background-color: $violet;
+    @include flex;
+    @include buttons;
+    @include font;
+  }
+  .fade-violeta:hover {
+    background-color: $darker-violet;
+  }
+}
+// 3D //
+.tresD {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: auto;
+  border-bottom: 1px solid grey;
+  @include font-tittles-sections;
+}
+.botones-tresD {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.tresD-verde {
+  background-color: $green;
+  @include flex;
+  @include buttons;
+  @include font;
+  box-shadow: 0px 6px 0px 0px $darker-green;
+}
+.tresD-verde:hover {
+  box-shadow: 0px 0px 0px 0px;
+  transform: translateY(6px);
+}
+.tresD-celeste {
+  background-color: $blue;
+  @include flex;
+  @include buttons;
+  @include font;
+  box-shadow: 0px 6px 0px 0px $darker-blue;
+}
+.tresD-celeste:hover {
+  box-shadow: 0px 0px 0px 0px;
+  transform: translateY(6px);
+}
+.tresD-amarillo {
+  background-color: $yellow;
+  @include flex;
+  @include buttons;
+  @include font;
+  box-shadow: 0px 6px 0px 0px $darker-yellow;
+}
+.tresD-amarillo:hover {
+  box-shadow: 0px 0px 0px 0px;
+  transform: translateY(6px);
+}
+.tresD-violeta {
+  background-color: $violet;
+  @include flex;
+  @include buttons;
+  @include font;
+  box-shadow: 0px 6px 0px 0px $darker-violet;
+}
+.tresD-violeta:hover {
+  box-shadow: 0px 0px 0px 0px;
+  transform: translateY(6px);
+}
+// BORDER //
+.border {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: auto;
+  border-bottom: 1px solid grey;
+  @include font-tittles-sections;
+}
+.botones-border {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.border-verde {
+  background-color: $green;
+  @include flex;
+  @include buttons;
+  @include font;
+  box-shadow: 0px 0px 0px 0px $darker-green;
+}
+.border-verde:hover {
+  -webkit-box-shadow: 0px 0px 0px 5px rgba(0, 113, 68, 1);
+  -moz-box-shadow: 0px 0px 0px 5px rgba(0, 113, 68, 1);
+  box-shadow: 0px 0px 0px 5px rgba(0, 113, 68, 1);
+}
+.border-celeste {
+  background-color: $blue;
+  @include flex;
+  @include buttons;
+  @include font;
+  box-shadow: 0px 0px 0px 0px $darker-blue;
+}
+.border-celeste:hover {
+  -webkit-box-shadow: 0px 0px 0px 5px rgba(30, 129, 133, 1);
+  -moz-box-shadow: 0px 0px 0px 5px rgba(30, 129, 133, 1);
+  box-shadow: 0px 0px 0px 5px rgba(30, 129, 133, 1);
+}
+.border-amarillo {
+  background-color: $yellow;
+  @include flex;
+  @include buttons;
+  @include font;
+  box-shadow: 0px 0px 0px 0px $darker-yellow;
+}
+.border-amarillo:hover {
+  -webkit-box-shadow: 0px 0px 0px 5px rgba(255, 153, 0, 1);
+  -moz-box-shadow: 0px 0px 0px 5px rgba(255, 153, 0, 1);
+  box-shadow: 0px 0px 0px 5px rgba(255, 153, 0, 1);
+}
+.border-violeta {
+  background-color: $violet;
+  @include flex;
+  @include buttons;
+  @include font;
+  box-shadow: 0px 0px 0px 0px $darker-violet;
+}
+.border-violeta:hover {
+  -webkit-box-shadow: 0px 0px 0px 5px rgba(109, 24, 75, 1);
+  -moz-box-shadow: 0px 0px 0px 5px rgba(109, 24, 75, 1);
+  box-shadow: 0px 0px 0px 5px rgba(109, 24, 75, 1);
+}
+// FLOAT //
+.float {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: auto;
+  border-bottom: 1px solid grey;
+  @include font-tittles-sections;
+}
+.botones-float {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.float-verde {
+  background-color: $green;
+  @include flex;
+  @include buttons;
+  @include font;
+  box-shadow: 0px 0px 0px 0px;
+}
+.float-verde:hover {
+  -webkit-box-shadow: 0px 10px 9px -8px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 10px 9px -8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 10px 9px -8px rgba(0, 0, 0, 0.4);
+  transform: scale(1.1);
+}
+.float-celeste {
+  background-color: $blue;
+  @include flex;
+  @include buttons;
+  @include font;
+  box-shadow: 0px 0px 0px 0px;
+}
+.float-celeste:hover {
+  -webkit-box-shadow: 0px 10px 9px -8px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 10px 9px -8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 10px 9px -8px rgba(0, 0, 0, 0.4);
+  transform: scale(1.1);
+}
+.float-amarillo {
+  background-color: $yellow;
+  @include flex;
+  @include buttons;
+  @include font;
+  box-shadow: 0px 0px 0px 0px;
+}
+.float-amarillo:hover {
+  -webkit-box-shadow: 0px 10px 9px -8px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 10px 9px -8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 10px 9px -8px rgba(0, 0, 0, 0.4);
+  transform: scale(1.1);
+}
+.float-violeta {
+  background-color: $violet;
+  @include flex;
+  @include buttons;
+  @include font;
+  box-shadow: 0px 0px 0px 0px;
+}
+.float-violeta:hover {
+  -webkit-box-shadow: 0px 10px 9px -8px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 10px 9px -8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 10px 9px -8px rgba(0, 0, 0, 0.4);
+  transform: scale(1.1);
+}
+// SLIDE //
+.slide {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: auto;
+  border-bottom: 1px solid grey;
+  @include font-tittles-sections;
+}
+.botones-slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.sorpresa {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  height: 50px;
+}
+.slide-verde {
+  background-color: $green;
+  position: absolute;
+  z-index: 1;
+  @include flex;
+  @include buttons;
+  @include font;
+}
+.slide-verde:hover {
+  transform: translateY(30px);
+}
+.slide-celeste {
+  background-color: $blue;
+  position: absolute;
+  z-index: 1;
+  @include flex;
+  @include buttons;
+  @include font;
+}
+.slide-celeste:hover {
+  transform: translateY(30px);
+}
+.slide-amarillo {
+  background-color: $yellow;
+  position: absolute;
+  z-index: 1;
+  @include flex;
+  @include buttons;
+  @include font;
+}
+.slide-amarillo:hover {
+  transform: translateY(30px);
+}
+.slide-violeta {
+  background-color: $violet;
+  position: absolute;
+  z-index: 1;
+  @include flex;
+  @include buttons;
+  @include font;
+}
+.slide-violeta:hover {
+  transform: translateY(30px);
+}

@@ -1,0 +1,523 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap");
+body {
+  margin: 0;
+  background-color: #eeeaea; }
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 1200px; }
+  .contenedor .titulo {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    width: 600px;
+    height: 50px;
+    font-family: "Josefin Slab", serif;
+    color: #00ae68;
+    font-size: 40px;
+    font-weight: 900; }
+
+.titulo-seccion {
+  height: auto;
+  padding-top: 40px; }
+
+.fade {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: auto;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  font-family: "Josefin Slab", serif;
+  font-weight: bolder;
+  font-size: 25px;
+  color: black; }
+
+.botones-fade {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  font-family: "Josefin Slab", serif;
+  padding-top: 40px;
+  padding-bottom: 30px; }
+  .botones-fade .fade-verde {
+    background-color: #00ae68;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    font-family: "Josefin Slab", serif;
+    transition: all 0.3s;
+    font-family: "Josefin Slab", serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white; }
+  .botones-fade .fade-verde:hover {
+    background-color: #007144; }
+  .botones-fade .fade-celeste {
+    background-color: #5dc8cd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    font-family: "Josefin Slab", serif;
+    transition: all 0.3s;
+    font-family: "Josefin Slab", serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white; }
+  .botones-fade .fade-celeste:hover {
+    background-color: #1e8185; }
+  .botones-fade .fade-amarillo {
+    background-color: #ffaa40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    font-family: "Josefin Slab", serif;
+    transition: all 0.3s;
+    font-family: "Josefin Slab", serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white; }
+  .botones-fade .fade-amarillo:hover {
+    background-color: #ff9900; }
+  .botones-fade .fade-violeta {
+    background-color: #a74982;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    font-family: "Josefin Slab", serif;
+    transition: all 0.3s;
+    font-family: "Josefin Slab", serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white; }
+  .botones-fade .fade-violeta:hover {
+    background-color: #6d184b; }
+
+.tresD {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: auto;
+  border-bottom: 1px solid grey;
+  font-family: "Josefin Slab", serif;
+  font-weight: bolder;
+  font-size: 25px;
+  color: black; }
+
+.botones-tresD {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  padding-top: 40px;
+  padding-bottom: 30px; }
+
+.tresD-verde {
+  background-color: #00ae68;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  font-family: "Josefin Slab", serif;
+  transition: all 0.3s;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  box-shadow: 0px 6px 0px 0px #007144; }
+
+.tresD-verde:hover {
+  box-shadow: 0px 0px 0px 0px;
+  transform: translateY(6px); }
+
+.tresD-celeste {
+  background-color: #5dc8cd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  font-family: "Josefin Slab", serif;
+  transition: all 0.3s;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  box-shadow: 0px 6px 0px 0px #1e8185; }
+
+.tresD-celeste:hover {
+  box-shadow: 0px 0px 0px 0px;
+  transform: translateY(6px); }
+
+.tresD-amarillo {
+  background-color: #ffaa40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  font-family: "Josefin Slab", serif;
+  transition: all 0.3s;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  box-shadow: 0px 6px 0px 0px #ff9900; }
+
+.tresD-amarillo:hover {
+  box-shadow: 0px 0px 0px 0px;
+  transform: translateY(6px); }
+
+.tresD-violeta {
+  background-color: #a74982;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  font-family: "Josefin Slab", serif;
+  transition: all 0.3s;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  box-shadow: 0px 6px 0px 0px #6d184b; }
+
+.tresD-violeta:hover {
+  box-shadow: 0px 0px 0px 0px;
+  transform: translateY(6px); }
+
+.border {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: auto;
+  border-bottom: 1px solid grey;
+  font-family: "Josefin Slab", serif;
+  font-weight: bolder;
+  font-size: 25px;
+  color: black; }
+
+.botones-border {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  padding-top: 40px;
+  padding-bottom: 30px; }
+
+.border-verde {
+  background-color: #00ae68;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  font-family: "Josefin Slab", serif;
+  transition: all 0.3s;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  box-shadow: 0px 0px 0px 0px #007144; }
+
+.border-verde:hover {
+  -webkit-box-shadow: 0px 0px 0px 5px #007144;
+  -moz-box-shadow: 0px 0px 0px 5px #007144;
+  box-shadow: 0px 0px 0px 5px #007144; }
+
+.border-celeste {
+  background-color: #5dc8cd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  font-family: "Josefin Slab", serif;
+  transition: all 0.3s;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  box-shadow: 0px 0px 0px 0px #1e8185; }
+
+.border-celeste:hover {
+  -webkit-box-shadow: 0px 0px 0px 5px #1e8185;
+  -moz-box-shadow: 0px 0px 0px 5px #1e8185;
+  box-shadow: 0px 0px 0px 5px #1e8185; }
+
+.border-amarillo {
+  background-color: #ffaa40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  font-family: "Josefin Slab", serif;
+  transition: all 0.3s;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  box-shadow: 0px 0px 0px 0px #ff9900; }
+
+.border-amarillo:hover {
+  -webkit-box-shadow: 0px 0px 0px 5px #ff9900;
+  -moz-box-shadow: 0px 0px 0px 5px #ff9900;
+  box-shadow: 0px 0px 0px 5px #ff9900; }
+
+.border-violeta {
+  background-color: #a74982;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  font-family: "Josefin Slab", serif;
+  transition: all 0.3s;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  box-shadow: 0px 0px 0px 0px #6d184b; }
+
+.border-violeta:hover {
+  -webkit-box-shadow: 0px 0px 0px 5px #6d184b;
+  -moz-box-shadow: 0px 0px 0px 5px #6d184b;
+  box-shadow: 0px 0px 0px 5px #6d184b; }
+
+.float {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: auto;
+  border-bottom: 1px solid grey;
+  font-family: "Josefin Slab", serif;
+  font-weight: bolder;
+  font-size: 25px;
+  color: black; }
+
+.botones-float {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  padding-top: 40px;
+  padding-bottom: 30px; }
+
+.float-verde {
+  background-color: #00ae68;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  font-family: "Josefin Slab", serif;
+  transition: all 0.3s;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  box-shadow: 0px 0px 0px 0px; }
+
+.float-verde:hover {
+  -webkit-box-shadow: 0px 10px 9px -8px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 10px 9px -8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 10px 9px -8px rgba(0, 0, 0, 0.4);
+  transform: scale(1.1); }
+
+.float-celeste {
+  background-color: #5dc8cd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  font-family: "Josefin Slab", serif;
+  transition: all 0.3s;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  box-shadow: 0px 0px 0px 0px; }
+
+.float-celeste:hover {
+  -webkit-box-shadow: 0px 10px 9px -8px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 10px 9px -8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 10px 9px -8px rgba(0, 0, 0, 0.4);
+  transform: scale(1.1); }
+
+.float-amarillo {
+  background-color: #ffaa40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  font-family: "Josefin Slab", serif;
+  transition: all 0.3s;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  box-shadow: 0px 0px 0px 0px; }
+
+.float-amarillo:hover {
+  -webkit-box-shadow: 0px 10px 9px -8px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 10px 9px -8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 10px 9px -8px rgba(0, 0, 0, 0.4);
+  transform: scale(1.1); }
+
+.float-violeta {
+  background-color: #a74982;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  font-family: "Josefin Slab", serif;
+  transition: all 0.3s;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  box-shadow: 0px 0px 0px 0px; }
+
+.float-violeta:hover {
+  -webkit-box-shadow: 0px 10px 9px -8px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 10px 9px -8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 10px 9px -8px rgba(0, 0, 0, 0.4);
+  transform: scale(1.1); }
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: auto;
+  border-bottom: 1px solid grey;
+  font-family: "Josefin Slab", serif;
+  font-weight: bolder;
+  font-size: 25px;
+  color: black; }
+
+.botones-slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  padding-top: 40px;
+  padding-bottom: 30px; }
+
+.sorpresa {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  height: 50px; }
+
+.slide-verde {
+  background-color: #00ae68;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  font-family: "Josefin Slab", serif;
+  transition: all 0.3s;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: white; }
+
+.slide-verde:hover {
+  transform: translateY(30px); }
+
+.slide-celeste {
+  background-color: #5dc8cd;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  font-family: "Josefin Slab", serif;
+  transition: all 0.3s;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: white; }
+
+.slide-celeste:hover {
+  transform: translateY(30px); }
+
+.slide-amarillo {
+  background-color: #ffaa40;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  font-family: "Josefin Slab", serif;
+  transition: all 0.3s;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: white; }
+
+.slide-amarillo:hover {
+  transform: translateY(30px); }
+
+.slide-violeta {
+  background-color: #a74982;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  font-family: "Josefin Slab", serif;
+  transition: all 0.3s;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: white; }
+
+.slide-violeta:hover {
+  transform: translateY(30px); }
